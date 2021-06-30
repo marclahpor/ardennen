@@ -1,0 +1,104 @@
+body   {
+    background-color:rgb(84, 119, 84);
+    overflow-x:hidden;
+     }
+
+
+.Fotoheader {
+    height: 50vh;
+    min-height: 300px;
+    background-image: url('https://wallpaperaccess.com/full/1223823.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+.titel {
+      color: white;
+      font-size: 60px;
+      
+  }
+
+#Linksboven {
+      background-color: rgb(84, 119, 84);
+      border-style: groove;
+      border-color: black;
+  }
+
+#Rechtsboven {
+      background-color: rgb(84, 119, 84);
+      border-style: groove;
+      border-color: black;
+  }
+
+  #Linksonder {
+    height: 50vh;
+    min-height: 300px;
+    background-image: url('https://wallpaperaccess.com/full/1223823.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #Middenonder {
+    background-color: rgb(95, 117, 95);
+    border-style: groove;
+    border-color: black;
+    border-top: 0rem;
+}
+
+  #Rechtsonder {
+    height: 50vh;
+    min-height: 300px;
+    background-image: url('https://wallpaperaccess.com/full/1223823.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.ml12 {
+    font-weight: 800;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.7em;
+   }
+  
+.ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+   }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    }
+
+footer {
+    background-color: rgb(95, 117, 95);
+    text-align: center;
+    color: black;
+    border: black;
+   }
+
+
+
+  #event_text {
+    text-align: left;
+    background-color: rgb(95, 117, 95);
+    color: black;
+    font-size: x-large;
+  }
+
+#button {
+  background-color: rgb(95, 117, 95);
+  border-style: solid;
+  border-color: white;
+}
+
+.tekstsignup {
+  color: white;
+
+}

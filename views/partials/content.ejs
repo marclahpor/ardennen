@@ -1,0 +1,91 @@
+<script>
+    const urlSearchParams = new URLSearchParams(window.location.search);
+
+</script>
+
+<div class="container-fluid">
+
+
+
+    <content>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col" id="Linksboven">
+
+                    <h3>de Ardennen</h3>
+                    <p>
+                        De Ardennen (Frans (in België): Ardenne, Frans (in Frankrijk): Ardennes, Waals: Årdene)
+                        vormen
+                        een bosrijk middelgebergte in het zuidoosten van België (een groot deel van Wallonië),
+                        Noord-Luxemburg en een klein deel in aangrenzend Frankrijk. Het is de westelijke uitloper
+                        van
+                        het Rijnlands leisteenplateau, een massief van leisteen, waartoe ook de Eifel, Hunsrück en
+                        de
+                        Taunus behoren. Het gebergte is een overblijfsel van de hercynische orogenese en werd 390
+                        tot
+                        300 miljoen jaar geleden gevormd.</p>
+                    <h3>klimaat</h3>
+                    <p>
+                        De afstand tot de zee en het reliëf hebben een duidelijke invloed op het klimaat. De
+                        hoogteligging zorgt voor stuwingsneerslag. Er valt in de hoogste delen zo'n 1400 mm neerslag
+                        per
+                        jaar, tegenover 800 mm in laag België. In de hoogste delen van de Ardennen is de
+                        jaartemperatuur
+                        een kleine 5 °C lager dan in laag België. In de wintermaanden is het vaak een sneeuwrijk
+                        gebied.
+                        Een sneeuwlaag van 50–60 cm is geen uitzondering. In strenge winters met veel neerslag is op
+                        de
+                        Hoge Venen een sneeuwlaag van 70 cm niet uitgesloten. Er zijn dan ook skipistes en loipes.
+                        Maar
+                        door de relatieve nabijheid van de zee in combinatie met de overheersende zuidwestenwind,
+                        kan er
+                        zich geen stabiel sneeuwdek vormen.</p>
+                </div>
+                <div class="col" id="Rechtsboven">
+                    <form action="/submit" method="POST">
+                        <label for="event_text"></label>
+                        <textarea class="form-control" id="event_text" name="event_text">
+                            Inschrijvingen Ardennentocht
+                        </textarea>
+
+                        <label for="name">naam:</label>
+                        <input type="text" class="form-control" id="name" name="name">
+
+                        <label for="url">emailadres:</label>
+                        <p><input type="text" class="form-control" id="url" name="url"></p>
+
+
+
+                        <p> <button type="submit" class="btn btn-default" id="button">Bevestigen</button></p>
+                        <%if (!isValid) { %>
+                            <div>U heeft toch echt een dikke fout gemaakt </div>
+                            <% } %>
+                    </form>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm" id="Linksonder">
+
+                        </div>
+                        <div class="col-sm" id="Middenonder">
+                            <h1>Inschrijvingen</h1>
+                            <ul>
+                                <% for(let i=0; i < images.length; i++) { %>
+                                    <li>
+                                        <H6 CLASS="tekstsignup">naam:
+                                            <%= images[i].name %>
+
+                                                emailadres: <%= images[i].url %>
+                                        </H6>
+                                    </li>
+                                    <% } %>
+                            </ul>
+                        </div>
+                        <div class="col-sm" id="Rechtsonder">
+
+                        </div>
+                    </div>
+                </div>
+    </content>
+
+</div>
